@@ -1,0 +1,45 @@
+button {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 2px 2px 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color: rgb(236, 201, 137);
+    color: black;
+    transform: translateY(-2px);
+    border-bottom: 4px solid rgb(83, 67, 37);
+}
+
+button:active {
+    background-color: rgb(188, 144, 62);
+    color: black;
+    transform: translateY(4px);
+    border-bottom: 0 solid black;
+}
+
+textarea {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 40rem;
+    background-color: wheat;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
