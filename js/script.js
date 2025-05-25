@@ -2,12 +2,8 @@ const c = document.getElementById("Celsius");
 const fOutput = document.getElementById("HasilFahrenheit");
 
 function konversiToFahrenheit() {
-  if (c.value.length > 1 && c.value.startsWith("0")) {
+  if (c.value.length > 1 && c.value.startsWith("0") && !c.value.startsWith("0.")) {
     fOutput.textContent = "Input tidak valid";
-    // const inputValid = document.createElement("p");
-    // inputValid.textContent = "Input tidak valid";
-    // document.body.appendChild(inputValid);
-    // document.getElementById("HasilFahrenheit").appendChild(inputValid);
     return;
   } else {
     const f = c.value * 1.8 + 32;
@@ -19,8 +15,3 @@ function reset() {
   c.value = "";
   fOutput.textContent = "";
 }
-
-// c.addEventListener("input", function () {
-//     const f = (c.value * 1.8) + 32;
-//     document.getElementById("Fahrenheit").value = f;
-// });
