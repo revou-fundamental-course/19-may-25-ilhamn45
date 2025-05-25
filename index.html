@@ -25,15 +25,15 @@
         <input id="Celsius" type="number" placeholder="Masukkan derajat Celsius"></textarea>
     </div>
     <div>
-        <button>Konversi</button>
+        <button onclick="konversiToFahrenheit()">Konversi</button>
+        <button class="reset" onclick="reset()">Reset</button>
         <button>Reverse</button>
-        <button>Reset</button>
     </div>
     <h4>Hasil Konversi:</h4>
     <div>
-        <label for="Fahrenheit">Fahrenheit (&deg;F):</label>
+        <label for="HasilFahrenheit">Fahrenheit (&deg;F):</label>
         <br />
-        <textarea id="Fahrenheit" readonly></textarea>
+        <textarea id="HasilFahrenheit" readonly></textarea>
     </div>
     <div>
         <label for="Cara">Cara Kalkulasi:</label>
@@ -51,5 +51,6 @@
     </main>
 
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
